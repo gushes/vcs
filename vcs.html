@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VCS</title>
+    <link rel="stylesheet" href=vcs/vcs.css">
+    <style>
+        body {
+            background-color: aqua;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 5px solid black;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+    <h1>VCS Anthony G - May 2019</h1>
+    <div style="margin: 15px;">
+        <h3>What is a Version Contorl System:</h3>
+        <p>What is “version control”, and why should you care? Version control is a system that records changes to a
+            file or set of files over time so that you can recall specific versions later.
+            For the examples in this book, you will use software source code as the files being version controlled,
+            though in reality you can do this with nearly any type of file on a computer. <br>
+            Exert from <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Git SCM</a>
+        </p>
+        <h3>What is Git:</h3>
+        <p>
+            Many people’s version-control method of choice is to copy files into another directory (perhaps a
+            time-stamped directory, if they’re clever). This approach is very common because it is so simple,
+            but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write
+            to the wrong file or copy over files you don’t mean to. <br>
+            Exert from <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Git SCM</a> 
+        </p>
+        <h3> What is GitHub:</h3>
+        <p>
+            A Centralized Version Control Systems (CVCSs). These systems (such as CVS, Subversion, and Perforce) have a
+            single server that contains all the versioned files,
+            and a number of clients that check out files from that central place. For many years, this has been the
+            standard for version control. <br>
+            Exert from <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Git SCM</a>
+        </p>
+    </div>
+    <br>
+    <div>
+        <h2>How to Set up Git and GitHub</h2>
+        <p>
+            Firstly you need to create a GitHub account <br>
+            Once you have created your GitHub account you can then create a Repository to store upload and backup your project
+        </p>
+        <h3>1. Configure git on you pc</h3>
+        <p><b>git config --global user.name "Your Name Here" </b><br>
+        <b>git config --global user.email "Your Email Here"</b>, configure git and tell it where to put the repo on GitHub <br>
+        <b>git config --list, list the configuration of git</b>, use this to make sure you enteres you git setting correctly <br>
+        <b>git init</b>, intialize or create a git repo in the project <br>
+        <b>touch .gitignore</b>, create the .gitingore file <br>
+        use a text editor to edit the .gitignore to exclude any files from your project that git should not track<br>
+        <b>git add -A</b>, add the project to the staging area <br>
+        <b>git commit -m "Inital Commit"</b>, commit the project to the repo <br>
+        <b>git status</b>, use this command to make sure that all files were commited correctly to your repo <br>
+        </p>
+        <h3>2. Useful Commands</h3>
+        <p>
+            <b>git diff</b>, check for the differences between the current working directury and the latest commit <br>
+            <b>git log</b>, list all previous commits and there discriptions <br>
+        </p>
+        <p>Git remote origin compsci@compsci-VBox:/var/www/html/anthonyg/vcs$ git remote add origin https://github.com/gushes/A4Test.git
+        </p>
+    </div>
+            <table>
+                    <tr>
+                        <td colspan="2"><h2>How to set up and configure Git and Githup on a linux pc</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p>Firstly you need to create a GitHub account</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p>Once you have created your GitHub account you can then create a Repository to store upload and backup your project</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h3>1. Configure git on you pc</h3></td>
+                    </tr>
+                    <tr>
+                        <td><p>git config --global user.name "Your Name Here"</p></td>
+                        <td><p>Configure git and tell it where to put the repo on GitHub</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git config --global user.email "Your Email Here"</p></td>
+                        <td><p>"</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git config --list, list the configuration of git</p></td>
+                        <td><p>Use this to make sure you enteres you git setting correctly</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git init</p></td>
+                        <td><p>intialize or create a git repo in the project</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>touch .gitignore</p></td>
+                        <td><p>create the .gitingore file</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p>use a text editor to edit the .gitignore to exclude any files from your project that git should not track</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git add -A</p></td>
+                        <td><p>add the project to the staging area</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git commit -m "Inital Commit"</p></td>
+                        <td><p>commit the project to the repo</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git status</p></td>
+                        <td><p>use this command to make sure that all files were commited correctly to your repo, this command also dispay generic information about the repo</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h3>2. Pushing a repo to GitHub via the command line</h3></td>
+                    </tr>
+                    <tr>
+                        <td><p>git add -A</p></td>
+                        <td><p>used to commint to repo on local machine</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git commit -m "your commit message here ,be discriptive about the changes you made"</p></td>
+                        <td><p>"</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git remote add origin Your_Repo_URL</p></td>
+                        <td><p>connects to GitHub</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git pull Origin Your_Brach</p></td>
+                        <td><p>retrieves the current code from the git repository</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git push Origin Your_Brach</p></td>
+                        <td><p>put the current repository to GitHub</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h3>3. Useful Commands</h3></td>
+                    </tr>
+                    <tr>
+                        <td><p>git diff</p></td>
+                        <td><p>check for the differences between the current working directury and the latest commit</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git log</p></td>
+                        <td><p>list all previous commits and there discriptions</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git clone url clone_directory</p></td>
+                        <td><p>clone a repository from either GitHub or your local machine in to a directory</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git remote -v</p></td>
+                        <td><p>information about if and where the directery is cloned from</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>git brach -a</p></td>
+                        <td><p>information about the braches on the repo</p></td>
+                    </tr>
+                </table>
+</body>
+
+</html>
